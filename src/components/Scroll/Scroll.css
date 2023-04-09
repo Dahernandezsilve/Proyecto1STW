@@ -1,3 +1,114 @@
+*, :before, :after {
+    box-sizing: inherit;
+}   
+
+div {
+    display: block;
+}
+
+main {
+    display: block;
+}
+
+.homeScroll {
+    --home-hero-height: calc(min(9.29px * 100, 80vw));
+}
+
+.homeScroll {
+    --mapped-progress: calc((0.616651 - 0.5) / 0.5);
+    --home-hero-height: calc(9.29px * 100);
+    position: relative;
+    width: 100%;
+    height: var(--home-hero-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.homeScrollContent {
+    position: relative;
+    width: 100%;
+    mix-blend-mode: difference;
+    z-index: 10;
+}
+
+.homeScrollContent {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.33333rem;
+    padding-left: 1.33333rem;
+}
+
+.homeHeading {
+    font-size: 3.33333rem;
+    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
+}
+
+.homeHeading {
+    font-weight: initial;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: initial;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.HomeScrollBackground {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    transform: translate3d(0, calc(-25vh * calc((0.606001 - 0.5) / 0.5)), 0);
+}
+
+.homeVideo {
+    position: absolute;
+    inset: 0;
+}
+
+.homeVideoView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    z-index: 0;
+}
+
+video {
+    vertical-align: middle;
+}
+
 .homeScrollContainer {
     margin-right: auto;
     margin-left: auto;

@@ -2,8 +2,17 @@
     box-sizing: inherit;
 }
 
-a {
-    color: currentColor;
+header {
+    display: block;
+}
+
+.Header {
+    mix-blend-mode: difference;
+    color: #fff;
+}
+
+.Header {
+    transform: translate3d(0px, 0px, 0px);
 }
 
 .Header {
@@ -11,15 +20,15 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: var(4rem);
+    height: 4rem;
     z-index: 800;
-    font-size: var(18px);
+    font-size: 1.6rem;
     line-height: 1.2;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(var(4), 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 1.33333rem;
-    padding: 0px var(1.33333rem);
+    padding: 0px 1.33333rem;
     transition: transform .2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -28,14 +37,15 @@ a {
     grid-row: 1 / 2;
 }
 
-.headerLocomotive {
-    display: inline-block;
+a {
+    color: currentColor;
+    touch-action: manipulation;
+    text-decoration: none;
+    background-color: transparent;
 }
 
-.headerSymbol {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    text-align: right;
+.headerLocomotive {
+    display: inline-block;
 }
 
 .headerSymbol {
@@ -50,10 +60,12 @@ a {
 }
 
 .navHeader {
-    display: none;
+    grid-column: 7 / 11;
+    grid-row: 1 / 2;
+    display: inline-block;
 }
 
-.navHeaderList {
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -97,6 +109,12 @@ ul {
     justify-self: end;
 }
 
+.headerButton_menu-toggler {
+    grid-column: 7 / 9;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+
 button {
     display: inline-block;
     overflow: visible;
@@ -119,11 +137,16 @@ button {
     user-select: none;
 }
 
-
 button {
     touch-action: manipulation;
 }
 
 button {
     -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
 }

@@ -1,6 +1,18 @@
 import React from 'react'
 import './Scroll.css'
 
+function HomeFeaturedLinks() {
+  return (
+    <section className="homeFeaturedLinks">
+      <ul className="homeFeaturedLinkList">
+        <li className="homeFeaturedLinkItem" data-hover-shuffle="children">
+          
+        </li>
+      </ul>
+    </section>
+  )
+}
+
 function HomeScrollContainer() {
   return (
     <section className="homeSummary" data-scroll data-scroll-css-progress>
@@ -14,7 +26,7 @@ function HomeScrollContainer() {
         <div className="homeSummaryVisual">
           <div className="homeVisualSequence">
             <div className="homeVisualSequenceWrapper">
-              <canvas className="homeVisualCanvas" width="208" height="292" />
+              <canvas className="homeVisualCanvas" />
               <div className="homeVisualSequenceImage" />
             </div>
           </div>
@@ -36,7 +48,7 @@ function HomeScrollBackground() {
             <img className="homeImageInner" alt="Locomotive showreel video" width="1920" height="1080" src="uploads/home/posterhome-2000w.jpg" />
           </span>
         </div>
-        <video className="homeVideoView" poster="uploads/home/posterhome-2000w.jpg" playsInline muted="true" loop="true" data-module-video-inview="m5" data-scroll="" data-scroll-repeat="" data-scroll-call="toggle, VideoInview" data-src="https://player.vimeo.com/progressive_redirect/playback/792718372/rendition/720p/file.mp4?loc=external&amp;signature=b0c78c25f2f55ae3f00dca4e07238b15d319799aae345f3fbfce5a8d56c6692e" data-src-mobile="https://player.vimeo.com/progressive_redirect/playback/793443646/rendition/540p/file.mp4?loc=external&amp;signature=242657e35d3787e2cb90fb59a5eed30aae9a604953d7db175f6c1d25ed0d887a" src="https://player.vimeo.com/progressive_redirect/playback/793443646/rendition/540p/file.mp4?loc=external&amp;signature=242657e35d3787e2cb90fb59a5eed30aae9a604953d7db175f6c1d25ed0d887a" />
+        <video className="homeVideoView" playsInline muted="true" loop="true" data-module-video-inview="m5" data-scroll="" data-scroll-repeat="" data-scroll-call="toggle, VideoInview" src="src/assets/fondo.mp4" />
       </div>
     </div>
   )
@@ -67,10 +79,13 @@ function Scroll() {
         <div className="homeScrollContainer">
           <HomeScrollContainer />
           <h2 className="scrollTextMedium">  Featured work </h2>
-          <section className="homeFeaturedLinks" ></section>
-          <section className="homeAbout" ></section>
-          <section className="homeExtras" ></section>
+          <HomeFeaturedLinks />
+          <section className="homeAbout">
 
+          </section>
+          <section className="homeExtras">
+
+          </section>
         </div>
       </main>
     </div>
