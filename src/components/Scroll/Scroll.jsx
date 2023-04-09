@@ -1,6 +1,32 @@
 import React from 'react'
 import './Scroll.css'
 
+function HomeScrollContainer() {
+  return (
+    <section className="homeSummary" data-scroll data-scroll-css-progress>
+      <span className="homeSummaryLabel">©2008-2023</span>
+      <div className="homeSummaryLabelInner">
+        <p className="homeSummaryText">
+          <span>A dedicated team</span>
+          <span>obsessed with</span>
+          <span>your brand&apos;s decision</span>
+        </p>
+        <div className="homeSummaryVisual">
+          <div className="homeVisualSequence">
+            <div className="homeVisualSequenceWrapper">
+              <canvas className="homeVisualCanvas" width="208" height="292" />
+              <div className="homeVisualSequenceImage" />
+            </div>
+          </div>
+        </div>
+        <span className="homeSummaryFooter">
+          Built in MTL
+        </span>
+      </div>
+    </section>
+  )
+}
+
 function HomeScrollBackground() {
   return (
     <div className="HomeScrollBackground">
@@ -37,6 +63,14 @@ function Scroll() {
         <div className="homeScroll">
           <HomeScrollContent />
           <HomeScrollBackground />
+        </div>
+        <div className="homeScrollContainer">
+          <HomeScrollContainer />
+          <h2 className="scrollTextMedium">  Featured work </h2>
+          <section className="homeFeaturedLinks" ></section>
+          <section className="homeAbout" ></section>
+          <section className="homeExtras" ></section>
+
         </div>
       </main>
     </div>

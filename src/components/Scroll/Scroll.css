@@ -1,0 +1,72 @@
+.homeScrollContainer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.33333rem;
+    padding-left: 3.33333rem;
+}
+
+.homeSummary {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+}
+
+.homeSummaryLabelInner {
+    display: grid;
+    gap: calc(20px/2);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "text text visual visual"
+        "footer footer visual visual";
+    width: calc((100vw - 20px * (8 - 1) - 1.33333rem * 2) * 4/8 + 20px * (4 + -1));
+}
+
+.homeSummaryVisual {
+    grid-area: visual;
+    aspect-ratio: 5/7;
+}
+
+.homeVisualSequence {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.homeVisualSequenceWrapper, .homeVisualCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.homeVisualSequenceImage {
+    background-image: url('src/assets/printer.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    image-rendering: pixelated;
+}
+
+.homeSummaryFooter {
+    display: inline-block;
+    left: calc(calc(100% + 20px));
+    position: relative;
+    display: block;
+    margin-top: 0.25em;
+}
+
+.homeSummaryFooter:before {
+    position: absolute;
+    bottom: 90%;
+    content: '🛑';
+    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
+    font-size: 2em;
+    line-height: 1;
+}
