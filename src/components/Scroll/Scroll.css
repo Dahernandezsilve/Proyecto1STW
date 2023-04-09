@@ -44,7 +44,7 @@ main {
 
 .homeHeading {
     font-size: 3.33333rem;
-    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
+    font-family: "PPFragment"
 }
 
 .homeHeading {
@@ -86,10 +86,23 @@ h1 {
     position: fixed;
     inset: 0;
     z-index: -1;
-    transform: translate3d(0, calc(-25vh * calc((0.606001 - 0.5) / 0.5)), 0);
+    transform: translate3d(0, calc(1vh * var(--mapped-progress)), 0);
 }
 
-.homeVideo {
+.HomeScrollBackground:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background-color: var(--color);
+    opacity: calc(var(--mapped-progress) * 0.75);
+}
+
+div {
+    display: block;
+}
+
+.homeVideo>* {
     position: absolute;
     inset: 0;
 }
@@ -103,10 +116,16 @@ h1 {
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 0;
-}
+}   
 
 video {
     vertical-align: middle;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .homeScrollContainer {
@@ -177,7 +196,7 @@ video {
     position: absolute;
     bottom: 90%;
     content: '🛑';
-    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
+    font-family: "PPFragment";
     font-size: 2em;
     line-height: 1;
 }

@@ -8,12 +8,12 @@ function Nav1() {
       <ul className="navHeaderList">
         <li className="navHeaderItemList">
           <a href="https://locomotive.ca/en/work" className="navHeaderLinkItemList" data-hover-shuffle>
-            Work
+            Work,
           </a>
         </li>
         <li className="navHeaderItemList">
           <a href="https://locomotive.ca/en/agency" className="navHeaderLinkItemList" data-hover-shuffle>
-            Agency
+            Agency,
           </a>
         </li>
         <li className="navHeaderItemList">
@@ -34,7 +34,7 @@ function Header() {
           <span className="headerLocomotive" data-hover-shuffle>Locomotive</span>
           ®
         </a>
-        <span className="headerSymbol" />
+        <img className="headerSymbol" src="src/assets/locomotive3.png" alt="caracter3" />
         <Nav1 />
         <a href="https://locomotive.ca/en/contact" className="headerContact" data-hover-shuffle>
           Let´s talk

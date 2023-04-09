@@ -42,13 +42,15 @@ function HomeScrollContainer() {
 function HomeScrollBackground() {
   return (
     <div className="HomeScrollBackground">
-      <div className="homeVideo">
-        <div className="homeImage">
+      <div className="video homeVideo">
+        <div className="homeImage -Image">
           <span className="homeImageSpan">
             <img className="homeImageInner" alt="Locomotive showreel video" width="1920" height="1080" src="uploads/home/posterhome-2000w.jpg" />
           </span>
         </div>
-        <video className="homeVideoView" playsInline muted="true" loop="true" data-module-video-inview="m5" data-scroll="" data-scroll-repeat="" data-scroll-call="toggle, VideoInview" src="src/assets/fondo.mp4" />
+        <video autoPlay loop muted className="homeVideoView">
+          <source src="src/videos/fondo.mp4" type="video/mp4" />
+        </video>
       </div>
     </div>
   )
@@ -58,11 +60,11 @@ function HomeScrollContent() {
   return (
     <div className="homeScrollContent">
       <h1 className="homeHeading" data-allow-shuffle>
-        <span>🔶</span>
+        <img src="src\assets\locomotive1.png" alt="Caracter1" />
         Locomotive®
         <br />
         Digital-first Design Agency
-        <span>🍺🔞</span>
+        <img src="src\assets\locomotive2.png" alt="Caracter2" />
       </h1>
     </div>
   )

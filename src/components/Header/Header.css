@@ -53,12 +53,6 @@ a {
     height: 0.9em;
 }
 
-.headerSymbol:before {
-    content: '🔝';
-    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
-    font-size: 150%;
-}
-
 .navHeader {
     grid-column: 7 / 11;
     grid-row: 1 / 2;
@@ -71,26 +65,21 @@ ul {
     list-style: none;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
 .navHeaderItemList {
     display: inline-block;
 }
 
-.navHeaderLinkItemList{
-    font-kerning: none;
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
 }
 
-.Header a:not(.headerLogo):not(.focus-visible) {
-    outline: none;
+.navHeaderLinkItemList{
+    font-kerning: none;
+    color: currentColor;
+    touch-action: manipulation;
+    text-decoration: none;
+    background-color: transparent;  
 }
 
 .headerContact {
