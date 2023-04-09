@@ -1,0 +1,129 @@
+*, :before, :after {
+    box-sizing: inherit;
+}
+
+a {
+    color: currentColor;
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(4rem);
+    z-index: 800;
+    font-size: var(18px);
+    line-height: 1.2;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(var(4), 1fr);
+    gap: 1.33333rem;
+    padding: 0px var(1.33333rem);
+    transition: transform .2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.headerLogo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.headerLocomotive {
+    display: inline-block;
+}
+
+.headerSymbol {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: right;
+}
+
+.headerSymbol {
+    position: relative;
+    height: 0.9em;
+}
+
+.headerSymbol:before {
+    content: '🔝';
+    font-family: "LocomotiveNew",-apple-system,BlinkMacSystemFont,avenir next,avenir,segoe ui,helvetica neue,helvetica,Cantarell,Ubuntu,roboto,noto,arial,sans-serif;
+    font-size: 150%;
+}
+
+.navHeader {
+    display: none;
+}
+
+.navHeaderList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navHeaderItemList {
+    display: inline-block;
+}
+
+.navHeaderLinkItemList{
+    font-kerning: none;
+}
+
+.Header a:not(.headerLogo):not(.focus-visible) {
+    outline: none;
+}
+
+.headerContact {
+    display: none;
+}
+
+.headerContact {
+    grid-column: 11 / 13;
+    grid-row: 1 / 2;
+    text-align: right;
+    justify-self: end;
+}
+
+.headerButton_menu-toggler {
+    grid-column: 3 / 5;
+    justify-self: end;
+}
+
+button {
+    display: inline-block;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: none transparent;
+    color: inherit;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+button {
+    touch-action: manipulation;
+}
+
+button {
+    -webkit-appearance: button;
+}
