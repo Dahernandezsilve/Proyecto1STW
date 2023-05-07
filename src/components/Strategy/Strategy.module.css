@@ -1,0 +1,31 @@
+.strategy {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* opcional, para alinear verticalmente el texto y el video */
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px; 
+    margin-left: 300px;
+    align-items: flex-start; /* Agrega un margen derecho de 20px */
+}
+  
+.texto {
+    margin-left: 20px; /* Opcional: Agrega un margen izquierdo para el texto */
+}
+ 
+.videoStrategy {
+    width: 600px;
+    height: auto;
+}
+
+.imgArrow1 {
+    margin-left: 300px;
+}
+
+.imgArrow2 {
+    margin-left: 293px;
+}

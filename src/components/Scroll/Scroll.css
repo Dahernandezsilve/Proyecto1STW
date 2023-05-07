@@ -304,3 +304,14 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+
+.spanAlways1 {
+    display: block;
+    margin-left: 300px;
+}
+
+.spanAlways2 {
+    display: block;
+    margin-left: 455px;
+    margin-bottom: 200px;
+}

@@ -2,6 +2,9 @@
 import React from 'react'
 import './Scroll.css'
 import { HomeFeaturedLinkItem, HomeFeaturedLinkItem2 } from '../HomeFeaturedLinkItem/HomeFeaturedLinkItem'
+import HomeAbout from '../HomeAbout/HomeAbout'
+import Strategy from '../Strategy/Strategy'
+import HomeExtras from '../HomeExtras/HomeExtras'
 
 const HomeFeaturedLinks = () => (
   <section className="homeFeaturedLinks">
@@ -119,10 +122,17 @@ const Scroll = () => (
         <h2 className="scrollTextMedium">  Featured work </h2>
         <HomeFeaturedLinks />
         <section className="homeAbout">
-
+          <HomeAbout />
+          <Strategy />
+          <span className="spanAlways1">
+            Always looking
+          </span>
+          <span className="spanAlways2">
+            for top shelf talent
+          </span>
         </section>
         <section className="homeExtras">
-
+          <HomeExtras />
         </section>
       </div>
     </main>
