@@ -21,15 +21,18 @@
     vertical-align: bottom;
     display: inline-block;
     position: relative;
-    width: 0em;
-    transition: width .2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: width .2s cubic-bezier(0.5, 1, 0.32, 1);
     pointer-events: none;
   }
   
   .homeFeaturedImage:before {
     content: '';
     display: block;
-    padding-bottom: calc(1em);
+  }
+
+  video {
+    width: 250px;
+    height: auto;
   }
   
   .homeFeaturedItemTitle {
@@ -109,6 +112,6 @@
   
   .homeFeaturedItemTitle span:not(:last-child):after {
     content: " ";
-    padding: 0 0em;
+    padding: 0 0.0em;
   }
   

@@ -10,7 +10,7 @@ const HomeFeaturedLinks = () => (
         title="Pangram Pangram"
         subtitle1="Pangram"
         subtitle2="Pangram"
-        image="src/assets/pangram.png"
+        videoSrc="src/videos/Pangram.mp4"
         link="https://locomotive.ca/en/work/pangram-pangram-foundry"
         linkText="Read more about this project"
       />
@@ -18,7 +18,7 @@ const HomeFeaturedLinks = () => (
         title="Baillat Studio"
         subtitle1="Baillat"
         subtitle2="Studio"
-        image="src/assets/baillat.png"
+        videoSrc="src/videos/Studio.mp4"
         link="https://locomotive.ca/en/work/baillat-studio"
         linkText="Read more about this project"
       />
@@ -26,7 +26,7 @@ const HomeFeaturedLinks = () => (
         title="Age of Union"
         subtitle1="Age"
         subtitle2="of Union"
-        image="src/assets/age.png"
+        videoSrc="src/videos/Union.mp4"
         link="https://locomotive.ca/en/work/age-of-union"
         linkText="Read more about this project"
       />
@@ -34,7 +34,7 @@ const HomeFeaturedLinks = () => (
         title="It&apos;s not violent"
         subtitle1="It&apos;s not"
         subtitle2="violent"
-        image="src/assets/its.png"
+        videoSrc="src/videos/Violent.mp4"
         link="https://locomotive.ca/en/work/it-s-not-violent"
         linkText="Read more about this project"
       />
@@ -42,7 +42,7 @@ const HomeFeaturedLinks = () => (
         title="Haven Studios"
         subtitle1="Haven"
         subtitle2="Studios"
-        image="src/assets/haven.png"
+        videoSrc="src/videos/Haven.mp4"
         link="https://locomotive.ca/en/work/haven-studios"
         linkText="Read more about this project"
       />
