@@ -1,0 +1,52 @@
+.twoColumns {
+    display: flex;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.firstColumn {
+    flex: 1;
+}
+
+.firstColumn img {
+    margin-left: -10px;
+}
+
+.secondColumn {
+    flex: 1;
+}
+
+.secondColumn img {
+    float: right;
+    margin-right: 25px;
+}
+
+.text1 {
+    display: block;
+    color: black;
+    float: left;
+    margin-top: 10px;
+}
+
+.text2 {
+    color: black;
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.text11 {
+    display: block;
+    color: black;
+    float: left;
+    margin-left: 300px;
+    margin-top: 10px;
+}
+
+.text22 {
+    color: black;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}

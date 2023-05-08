@@ -1,0 +1,20 @@
+.extras{
+    color: black;
+}
+
+.bigLine{
+    margin-left: -13px;
+}
+
+.title1{
+    font-size: 100px;
+    font-family: PPFragment;
+    line-height: 0.6;
+}
+
+.title2{
+    margin-left: 70vw;
+    font-size: 100px;
+    font-family: PPFragment;
+    line-height: 0.6;
+}

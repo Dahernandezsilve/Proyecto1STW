@@ -140,19 +140,22 @@ video {
 }
 
 .homeSummary {
-    padding-bottom: clamp(calc(0.06667rem * 80), calc(150 / 14.4 * 1vw), calc(0.06667rem * 150));
+    padding-bottom: 150px;
+
 }
 
 .homeSummary {
-    padding-top: clamp(calc(0.06667rem * 80), calc(150 / 14.4 * 1vw), calc(0.06667rem * 150));
+    padding-top: 200px;
+    padding-left: -50px;
 }
 
 .homeSummary {
     position: relative;
     font-size: var(--font-size-medium);
-    line-height: 1.2;
+    line-height: 1.5;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .homeSummaryLabel {
@@ -160,11 +163,12 @@ video {
     position: absolute;
     top: 0.5em;
     right: 0;
-    width: calc((100vw - 20px * (8 - 1) - 1.33333rem * 2) * 2/8 + 20px * (2 + -1));
+    width: 25vw;
+    height: 300px;
 }
 
 .homeSummaryLabelInner {
-    width: calc((100vw - 20px * (8 - 1) - 1.33333rem * 2) * 4/8 + 20px * (4 + -1));
+    width: 30vw;
 }
 
 .homeSummaryText {
@@ -199,7 +203,7 @@ p {
 }
 
 .homeSummaryVisual {
-    aspect-ratio: 5/7;
+    aspect-ratio: 9/13;
 }
 
 .homeVisualSequence {
@@ -211,40 +215,37 @@ p {
 }
 
 .homeVisualSequenceWrapper, .homeVisualCanvas {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 120%;
 }
 
 .homeVisualCanvas {
-    width: 325px;
-    height: 455px;
+    width: 100%;
+    height: 120%;
 }
 
 canvas {
-    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    
 }
 
 .homeVisualSequenceImage {
-    background-image: url('src/assets/printer.png');
+    background-image: url('src/assets/printer3d.png');
     position: absolute;
     top: 0;
-    left: 0;
+    right: 200;
     width: 100%;
-    height: 100%;
-    z-index: -1;
+    height: 120%;
     background-size: cover;
     background-position: center;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: pixelated;
 }
 
 .homeSummaryFooter {
     display: inline-block;
-    left: calc(calc(100% + 20px));
+    left: calc(calc(100% + 50px));
     position: relative;
-    display: block;
-    margin-top: 0.25em;
+
 }
 
 .homeSummaryFooterImage {
