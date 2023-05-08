@@ -28,3 +28,11 @@
     display: block;
     padding: 0px;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
