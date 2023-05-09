@@ -50,3 +50,11 @@
     text-align: right;
     margin-top: 10px;
 }
+
+.link span {
+    text-decoration: none;
+}
+  
+.link:hover span {
+    text-decoration: underline;
+}

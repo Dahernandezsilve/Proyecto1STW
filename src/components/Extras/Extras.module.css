@@ -18,3 +18,14 @@
     font-family: PPFragment;
     line-height: 0.6;
 }
+
+/* archivo styles.module.css */
+
+.link img {
+    visibility: hidden;
+}
+  
+.link:hover img {
+    visibility: visible;
+}
+  

@@ -10,10 +10,21 @@ import {
   featuredLink,
 } from './HomeFeaturedLinkItem.module.css'
 
+const shuffleWord = (word) => {
+  let shuffled = ''
+  for (let i = 0; i < word.length; i++) {
+    const randomIndex = Math.floor(Math.random() * (i + 1))
+    shuffled = shuffled.substring(0, randomIndex) + word.charAt(i) + shuffled.substring(randomIndex)
+  }
+  return shuffled
+}
+
 const HomeFeaturedLinkItem = ({
   title, subtitle1, subtitle2, videoSrc, link, linkText,
 }) => {
   const [hover, setHover] = useState(false)
+  const [shuffledWordsubtitle1, setShuffledWordsubtitle1] = useState(subtitle1)
+  const [shuffledWordsubtitle2, setShuffledWordsubtitle2] = useState(subtitle2)
 
   const handleHover = () => {
     setHover(true)
@@ -23,11 +34,34 @@ const HomeFeaturedLinkItem = ({
     setHover(false)
   }
 
+  let timer
+
+  const handleMouseEnter1 = (word, setState) => {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      const shuffled = shuffleWord(word)
+      setState(shuffled)
+    }, 50)
+    timer = setTimeout(() => {
+      setState(word)
+    }, 100)
+  }
+
+  const handleMouseLeave1 = (word, setState) => {
+    clearTimeout(timer)
+    setState(word)
+  }
+
   return (
     <li className={homeFeaturedLinkItem} data-hover-shuffle="children" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
       <h3 className={homeFeaturedItemText}>{title}</h3>
       <div className={homeFeaturedItemTitle}>
-        <span>{subtitle1}</span>
+        <span
+          onMouseEnter={() => handleMouseEnter1(subtitle1, setShuffledWordsubtitle1)}
+          onMouseLeave={() => handleMouseLeave1(subtitle1, setShuffledWordsubtitle1)}
+        >
+          {shuffledWordsubtitle1 || subtitle1}
+        </span>
         <div className={homeFeaturedImage} style={{ width: hover ? '2em' : 0 }}>
           <span className={homeFeaturedImageInner}>
             <video autoPlay muted loop preload="auto">
@@ -35,7 +69,12 @@ const HomeFeaturedLinkItem = ({
             </video>
           </span>
         </div>
-        <span>{subtitle2}</span>
+        <span
+          onMouseEnter={() => handleMouseEnter1(subtitle2, setShuffledWordsubtitle2)}
+          onMouseLeave={() => handleMouseLeave1(subtitle2, setShuffledWordsubtitle2)}
+        >
+          {shuffledWordsubtitle2 || subtitle2}
+        </span>
       </div>
       <a href={link} className={featuredLink}>{linkText}</a>
     </li>
