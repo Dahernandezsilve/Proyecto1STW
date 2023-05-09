@@ -1,14 +1,36 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react'
-import './Scroll.css'
+import {
+  homeFeaturedLinks,
+  homeFeaturedLinkList,
+  homeScroll,
+  homeScrollContent,
+  homeHeading,
+  homeScrollContainer,
+  spanAlways1,
+  spanAlways2,
+  homeSummary,
+  homeSummaryLabel,
+  homeSummaryLabelInner,
+  homeSummaryText,
+  homeSummaryVisual,
+  homeVisualSequence,
+  homeVisualSequenceWrapper,
+  homeVisualCanvas,
+  homeVisualSequenceImage,
+  homeSummaryFooter,
+  homeSummaryFooterImage,
+  homeScrollBackground,
+  homeVideoView,
+} from './Scroll.module.css'
 import { HomeFeaturedLinkItem, HomeFeaturedLinkItem2 } from '../HomeFeaturedLinkItem/HomeFeaturedLinkItem'
 import HomeAbout from '../HomeAbout/HomeAbout'
 import Strategy from '../Strategy/Strategy'
 import HomeExtras from '../HomeExtras/HomeExtras'
 
 const HomeFeaturedLinks = () => (
-  <section className="homeFeaturedLinks">
-    <ul className="homeFeaturedLinkList">
+  <section className={homeFeaturedLinks}>
+    <ul className={homeFeaturedLinkList}>
       <HomeFeaturedLinkItem
         title="Pangram Pangram"
         subtitle1="Pangram"
@@ -59,24 +81,24 @@ const HomeFeaturedLinks = () => (
 )
 
 const HomeScrollContainer = () => (
-  <section className="homeSummary" data-scroll data-scroll-css-progress>
-    <span className="homeSummaryLabel">©2008-2023</span>
-    <div className="homeSummaryLabelInner">
-      <p className="homeSummaryText">
+  <section className={homeSummary} data-scroll data-scroll-css-progress>
+    <span className={homeSummaryLabel}>©2008-2023</span>
+    <div className={homeSummaryLabelInner}>
+      <p className={homeSummaryText}>
         <span>A dedicated team</span>
         <span>obsessed with</span>
         <span>your brand&apos;s decision</span>
       </p>
-      <div className="homeSummaryVisual">
-        <div className="homeVisualSequence">
-          <div className="homeVisualSequenceWrapper">
-            <canvas className="homeVisualCanvas" />
-            <div className="homeVisualSequenceImage" />
+      <div className={homeSummaryVisual}>
+        <div className={homeVisualSequence}>
+          <div className={homeVisualSequenceWrapper}>
+            <canvas className={homeVisualCanvas} />
+            <div className={homeVisualSequenceImage} />
           </div>
         </div>
       </div>
-      <span className="homeSummaryFooter">
-        <img className="homeSummaryFooterImage" src="src/assets/locomotive4.png" alt="caracter4" />
+      <span className={homeSummaryFooter}>
+        <img className={homeSummaryFooterImage} src="src/assets/locomotive4.png" alt="caracter4" />
         Built in MTL
       </span>
     </div>
@@ -84,23 +106,19 @@ const HomeScrollContainer = () => (
 )
 
 const HomeScrollBackground = () => (
-  <div className="HomeScrollBackground">
-    <div className="video homeVideo">
-      <div className="homeImage -Image">
-        <span className="homeImageSpan">
-          <img className="homeImageInner" alt="Locomotive showreel video" width="1920" height="1080" src="uploads/home/posterhome-2000w.jpg" />
-        </span>
-      </div>
-      <video autoPlay loop muted className="homeVideoView">
-        <source src="src/videos/fondo.mp4" type="video/mp4" />
-      </video>
-    </div>
+  <div className={homeScrollBackground}>
+    <span>
+      <img alt="Locomotive showreel video" width="1920" height="1080" src="uploads/home/posterhome-2000w.jpg" />
+    </span>
+    <video autoPlay loop muted className={homeVideoView}>
+      <source src="src/videos/fondo.mp4" type="video/mp4" />
+    </video>
   </div>
 )
 
 const HomeScrollContent = () => (
-  <div className="homeScrollContent">
-    <h1 className="homeHeading" data-allow-shuffle>
+  <div className={homeScrollContent}>
+    <h1 className={homeHeading} data-allow-shuffle>
       <img src="src\assets\locomotive1.png" alt="Caracter1" />
       Locomotive®
       <br />
@@ -111,27 +129,27 @@ const HomeScrollContent = () => (
 )
 
 const Scroll = () => (
-  <div className="Scroll" data-module-scrooll="main" data-scroll-smooth="true">
+  <div data-module-scrooll="main" data-scroll-smooth="true">
     <main>
-      <div className="homeScroll">
+      <div className={homeScroll}>
         <HomeScrollContent />
         <HomeScrollBackground />
       </div>
-      <div className="homeScrollContainer">
+      <div className={homeScrollContainer}>
         <HomeScrollContainer />
-        <h2 className="scrollTextMedium">  Featured work </h2>
+        <h2> Featured work </h2>
         <HomeFeaturedLinks />
-        <section className="homeAbout">
+        <section>
           <HomeAbout />
           <Strategy />
-          <span className="spanAlways1">
+          <span className={spanAlways1}>
             Always looking
           </span>
-          <span className="spanAlways2">
+          <span className={spanAlways2}>
             for top shelf talent
           </span>
         </section>
-        <section className="homeExtras">
+        <section>
           <HomeExtras />
         </section>
       </div>

@@ -14,29 +14,39 @@ import {
   headerContact,
 } from './Header.module.css'
 
+const shuffleWord = (word) => {
+  let shuffled = ''
+  for (let i = 0; i < word.length; i++) {
+    const randomIndex = Math.floor(Math.random() * (i + 1))
+    shuffled = shuffled.substring(0, randomIndex) + word.charAt(i) + shuffled.substring(randomIndex)
+  }
+  return shuffled
+}
+
 const Header = () => {
-  const [originalText, setOriginalText] = useState(null)
+  const [shuffledWordLocomotive, setShuffledWordLocomotive] = useState('Locomotive®')
+  const [shuffledWordWork, setShuffledWordWork] = useState('Work')
+  const [shuffledWordAgency, setShuffledWordAgency] = useState('Agency')
+  const [shuffledWordCareers, setShuffledWordCareers] = useState('Careers')
+  const [shuffledWordStore, setShuffledWordStore] = useState('Store')
+  const [shuffledWordLets, setShuffledWordLets] = useState('Let´s talk')
 
-  const shuffle = (text) => {
-    const chars = text.split('')
-    for (let i = chars.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [chars[i], chars[j]] = [chars[j], chars[i]]
-    }
-    return chars.join('')
+  let timer
+
+  const handleMouseEnter = (word, setState) => {
+    clearTimeout(timer)
+    timer = setTimeout(() => {
+      const shuffled = shuffleWord(word)
+      setState(shuffled)
+    }, 50)
+    timer = setTimeout(() => {
+      setState(word)
+    }, 100)
   }
 
-  const handleMouseOver = (event) => {
-    const { target } = event
-    setOriginalText(target.innerText)
-    const shuffledText = shuffle(target.innerText)
-    target.innerText = shuffledText
-    target.style.textDecoration = 'underline'
-  }
-  const handleMouseOut = (event) => {
-    const { target } = event
-    target.innerText = originalText
-    target.style.textDecoration = 'none'
+  const handleMouseLeave = (word, setState) => {
+    clearTimeout(timer)
+    setState(word)
   }
 
   return (
@@ -45,43 +55,68 @@ const Header = () => {
         <a href="https://locomotive.ca/en" className={headerLogo}>
           <span
             className={headerLocomotive}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
+            onMouseEnter={() => handleMouseEnter('Locomotive®', setShuffledWordLocomotive)}
+            onMouseLeave={() => handleMouseLeave('Locomotive®', setShuffledWordLocomotive)}
           >
-            Locomotive
+            {shuffledWordLocomotive || 'Locomotive®'}
           </span>
-          ®
+
         </a>
         <img className={headerSymbol} src="src/assets/locomotive3.png" alt="caracter3" />
         <nav className={navHeader}>
           <ul>
             <li className={navHeaderItemList} data-word="Work">
-              <a href="https://locomotive.ca/en/work" className={navHeaderLinkItemList} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                Work
+              <a
+                href="https://locomotive.ca/en/work"
+                className={navHeaderLinkItemList}
+                onMouseEnter={() => handleMouseEnter('Work', setShuffledWordWork)}
+                onMouseLeave={() => handleMouseLeave('Work', setShuffledWordWork)}
+              >
+                {shuffledWordWork || 'Work'}
               </a>
               ,
             </li>
             <li className={navHeaderItemList} data-word="Agency">
-              <a href="https://locomotive.ca/en/agency" className={navHeaderLinkItemList} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                Agency
+              <a
+                href="https://locomotive.ca/en/agency"
+                className={navHeaderLinkItemList}
+                onMouseEnter={() => handleMouseEnter('Agency', setShuffledWordAgency)}
+                onMouseLeave={() => handleMouseLeave('Agency', setShuffledWordAgency)}
+              >
+                {shuffledWordAgency || 'Agency'}
               </a>
               ,
             </li>
             <li className={navHeaderItemList} data-word="Careers">
-              <a href="https://locomotive.ca/en/careers" className={navHeaderLinkItemList} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                Careers
+              <a
+                href="https://locomotive.ca/en/careers"
+                className={navHeaderLinkItemList}
+                onMouseEnter={() => handleMouseEnter('Careers', setShuffledWordCareers)}
+                onMouseLeave={() => handleMouseLeave('Careers', setShuffledWordCareers)}
+              >
+                {shuffledWordCareers || 'Careers'}
               </a>
               ,
             </li>
-            <li className={navHeaderItemList} data-word="Story">
-              <a href="https://locomotive.ca/en/careers" className={navHeaderLinkItemList} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                Story
+            <li className={navHeaderItemList} data-word="Store">
+              <a
+                href="https://locomotive.ca/en/careers"
+                className={navHeaderLinkItemList}
+                onMouseEnter={() => handleMouseEnter('Store', setShuffledWordStore)}
+                onMouseLeave={() => handleMouseLeave('Store', setShuffledWordStore)}
+              >
+                {shuffledWordStore || 'Store'}
               </a>
             </li>
           </ul>
         </nav>
-        <a href="https://locomotive.ca/en/contact" className={headerContact} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-          <span>Let´s talk</span>
+        <a href="https://locomotive.ca/en/contact" className={headerContact}>
+          <span
+            onMouseEnter={() => handleMouseEnter("Let's Talk", setShuffledWordLets)}
+            onMouseLeave={() => handleMouseLeave("Let's Talk", setShuffledWordLets)}
+          >
+            {shuffledWordLets || 'Let´s talk'}
+          </span>
         </a>
       </div>
     </header>

@@ -82,14 +82,14 @@ h1 {
     font-size: 2em;
 }
 
-.HomeScrollBackground {
+.homeScrollBackground {
     position: fixed;
     inset: 0;
     z-index: -1;
     transform: translate3d(0, calc(1vh * var(--mapped-progress)), 0);
 }
 
-.HomeScrollBackground:before {
+.homeScrollBackground:before {
     content: '';
     position: absolute;
     inset: 0;
@@ -102,10 +102,6 @@ div {
     display: block;
 }
 
-.homeVideo>* {
-    position: absolute;
-    inset: 0;
-}
 
 .homeVideoView {
     position: absolute;
