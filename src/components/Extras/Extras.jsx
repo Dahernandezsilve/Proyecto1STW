@@ -8,6 +8,7 @@ import {
   title2,
   link,
 } from './Extras.module.css'
+import ExtrasDivider from '../ExtrasDivider/ExtrasDivider'
 
 const shuffleWord = (word) => {
   let shuffled = ''
@@ -20,14 +21,8 @@ const shuffleWord = (word) => {
 
 const Extras = () => {
   const [shuffledWordShould, setShuffledWordShould] = useState('Should I use Locomotive Scroll on my project?')
-  const [shuffledWord500, setShuffledWord500] = useState('500 days later, My Better Normal')
-  const [shuffledWordWhy, setShuffledWordWhy] = useState("Why don't we use front-end frameworks at Locomotive?")
-  const [shuffledWordThe, setShuffledWordThe] = useState('The revolution of the workspace as we know it')
-  const [shuffledWordA, setShuffledWordA] = useState('A few things your UX designer can learn from your shrink')
   const [shuffledWordCan, setShuffledWordCan] = useState('Can I say bravo?')
   const [shuffledWordCarmen, setShuffledWordCarmen] = useState('(2022) Locomotive in Playa del Carmen')
-  const [shuffledWordMexico, setShuffledWordMexico] = useState('(2019) Locomotive in Mexico')
-  const [shuffledWordJamaica, setShuffledWordJamaica] = useState('(2018) Locomotive in Jamaica')
   const [shuffledWordSanama, setShuffledWordSanama] = useState('(2017) Locomotive in Samaná')
   const [shuffledWordCheck, setShuffledWordCheck] = useState('Check out our gear')
 
@@ -72,58 +67,54 @@ const Extras = () => {
         <img style={{ marginLeft: '12vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
       </a>
       <img style={{ marginLeft: '47.2vw', marginTop: '-30px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        className={link}
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-20px',
-        }}
-        href="https://medium.com/@LocomotiveMTL/500-days-later-my-better-normal-e9fe2eedd44e"
-        onMouseEnter={() => handleMouseEnter('500 days later, My Better Normal', setShuffledWord500)}
-        onMouseLeave={() => handleMouseLeave('500 days later, My Better Normal', setShuffledWord500)}
-      >
-        {shuffledWord500 || '500 days later, My Better Normal'}
-        <img style={{ marginLeft: '21vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-70px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        className={link}
-        href="https://medium.com/@LocomotiveMTL/why-dont-we-use-front-end-frameworks-at-locomotive-4ccb20c05bc5"
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-40px',
-        }}
-        onMouseEnter={() => handleMouseEnter("Why don't we use front-end frameworks at Locomotive?", setShuffledWordWhy)}
-        onMouseLeave={() => handleMouseLeave("Why don't we use front-end frameworks at Locomotive?", setShuffledWordWhy)}
-      >
-        {shuffledWordWhy || 'Why don&apos;t we use front-end frameworks at Locomotive?'}
-        <img style={{ marginLeft: '5.4vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-110px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        className={link}
-        href="https://medium.com/@LocomotiveMTL/the-revolution-of-the-workspace-as-we-know-it-6e50c4bc1b2"
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-60px',
-        }}
-        onMouseEnter={() => handleMouseEnter('The revolution of the workspace as we know it', setShuffledWordThe)}
-        onMouseLeave={() => handleMouseLeave('The revolution of the workspace as we know it', setShuffledWordThe)}
-      >
-        {shuffledWordThe || 'The revolution of the workspace as we know it'}
-        <img style={{ marginLeft: '12.2vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-150px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        href="https://medium.com/@LocomotiveMTL/a-few-things-your-ux-designer-can-learn-from-your-shrink-locomotive-style-8a8de62c841"
-        className={link}
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-80px',
-        }}
-        onMouseEnter={() => handleMouseEnter('A few things your UX designer can learn from your shrink', setShuffledWordA)}
-        onMouseLeave={() => handleMouseLeave('A few things your UX designer can learn from your shrink', setShuffledWordA)}
-      >
-        {shuffledWordA || 'A few things your UX designer can learn from your shrink'}
-        <img style={{ marginLeft: '5vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-190px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
+      <ExtrasDivider
+        text="500 days later, My Better Normal"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://medium.com/@LocomotiveMTL/500-days-later-my-better-normal-e9fe2eedd44e"
+        ImarginLeft="21vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-70px"
+        position="relative"
+        top="-20px"
+      />
+      <ExtrasDivider
+        text="Why don't we use front-end frameworks at Locomotive?"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://medium.com/@LocomotiveMTL/500-days-later-my-better-normal-e9fe2eedd44e"
+        ImarginLeft="5.4vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-110px"
+        position="relative"
+        top="-40px"
+      />
+      <ExtrasDivider
+        text="The revolution of the workspace as we know it"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://medium.com/@LocomotiveMTL/the-revolution-of-the-workspace-as-we-know-it-6e50c4bc1b2"
+        ImarginLeft="12.2vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-150px"
+        position="relative"
+        top="-60px"
+      />
+      <ExtrasDivider
+        text="A few things your UX designer can learn from your shrink"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://medium.com/@LocomotiveMTL/the-revolution-of-the-workspace-as-we-know-it-6e50c4bc1b2"
+        ImarginLeft="5vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-190px"
+        position="relative"
+        top="-80px"
+      />
       <a
         className={link}
         href="https://medium.com/@LocomotiveMTL/can-i-say-bravo-18e8769b2bf1"
@@ -153,32 +144,30 @@ const Extras = () => {
         <img style={{ marginLeft: '16vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
       </a>
       <img style={{ marginLeft: '47.2vw', marginTop: '-270px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        className={link}
-        href="https://explore.locomotive.ca/en/mexico"
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-140px',
-        }}
-        onMouseEnter={() => handleMouseEnter('(2019) Locomotive in Mexico', setShuffledWordMexico)}
-        onMouseLeave={() => handleMouseLeave('(2019) Locomotive in Mexico', setShuffledWordMexico)}
-      >
-        {shuffledWordMexico || '(2019) Locomotive in Mexico'}
-        <img style={{ marginLeft: '23.3vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-310px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
-      <a
-        className={link}
-        href="https://explore.locomotive.ca/en/jamaica"
-        style={{
-          textDecoration: 'none', marginLeft: '48.3vw', lineHeight: '0.1', position: 'relative', top: '-160px',
-        }}
-        onMouseEnter={() => handleMouseEnter('(2018) Locomotive in Jamaica', setShuffledWordJamaica)}
-        onMouseLeave={() => handleMouseLeave('(2018) Locomotive in Jamaica', setShuffledWordJamaica)}
-      >
-        {shuffledWordJamaica || '(2018) Locomotive in Jamaica'}
-        <img style={{ marginLeft: '22.8vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
-      </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-350px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
+      <ExtrasDivider
+        text="(2019) Locomotive in Mexico"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://explore.locomotive.ca/en/mexico"
+        ImarginLeft="23.3vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-310px"
+        position="relative"
+        top="-140px"
+      />
+      <ExtrasDivider
+        text="(2018) Locomotive in Jamaica"
+        SmarginLeft="48.3vw"
+        SlineHeight="0.1"
+        StextDecoration="none"
+        Shref="https://explore.locomotive.ca/en/jamaica"
+        ImarginLeft="23.8vw"
+        I2marginLeft="47.2vw"
+        I2marginTop="-350px"
+        position="relative"
+        top="-160px"
+      />
       <a
         className={link}
         href="https://explore.locomotive.ca/en/samana"

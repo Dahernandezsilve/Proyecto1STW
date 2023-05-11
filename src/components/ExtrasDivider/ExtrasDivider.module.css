@@ -1,0 +1,7 @@
+.link img {
+    visibility: hidden;
+}
+  
+.link:hover img {
+    visibility: visible;
+}
