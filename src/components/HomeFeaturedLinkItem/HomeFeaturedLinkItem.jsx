@@ -89,11 +89,11 @@ const HomeFeaturedLinkItem2 = ({
     <h3 className={homeFeaturedItemText}>{title}</h3>
     <div className={homeFeaturedItemTitle}>
       <video autoPlay muted loop preload="auto">
-        <source src="src/videos/TriangleL.mp4" type="video/mp4" />
+        <source src="/videos/TriangleL.mp4" type="video/mp4" />
       </video>
       <span>{title}</span>
       <video autoPlay muted loop preload="auto">
-        <source src="src/videos/Triangle.mp4" type="video/mp4" />
+        <source src="/videos/Triangle.mp4" type="video/mp4" />
       </video>
     </div>
     <a href={link} className={featuredLink}>{linkText}</a>

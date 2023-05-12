@@ -50,9 +50,9 @@ const ExtrasDivider = ({
         onMouseLeave={() => handleMouseLeave(text, setShuffledWord)}
       >
         {shuffledWord || text }
-        <img style={{ marginLeft: ImarginLeft }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
+        <img style={{ marginLeft: ImarginLeft }} src="/arrowUpR.png" alt="arrowUpR" />
       </a>
-      <img style={{ marginLeft: I2marginLeft, marginTop: I2marginTop, display: 0 }} src="src\assets\mediumLine2.png" alt="mediumLine" />
+      <img style={{ marginLeft: I2marginLeft, marginTop: I2marginTop, display: 0 }} src="/mediumLine2.png" alt="mediumLine" />
     </div>
   )
 }

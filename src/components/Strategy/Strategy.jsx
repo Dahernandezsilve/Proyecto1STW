@@ -46,14 +46,14 @@ const Strategy = () => {
     <div className={strategy}>
       <div className={videoContainer}>
         <video className={videoStrategy} autoPlay muted loop preload="auto">
-          <source src="src/videos/man.mp4" type="video/mp4" />
+          <source src="/videos/man.mp4" type="video/mp4" />
         </video>
         <div className={texto}>
           <span>
             From strategy to deployment and maintenance, we&apos;re the ultimate digital one-stop shop. Over the 15 years, Locomotive® has become a go-to for meaningful, innovative, results-driven digital experiences, web design and branding. Freshness guaranteed.
           </span>
           <br />
-          <img src="src\assets\line.png" alt="line" />
+          <img src="/line.png" alt="line" />
           <br />
           <a
             style={{
@@ -64,10 +64,10 @@ const Strategy = () => {
             onMouseLeave={() => handleMouseLeave('Agency', setShuffledWordAgency)}
           >
             {shuffledWordAgency || 'Agency'}
-            <img className={imgArrow1} src="src\assets\arrowRight.png" alt="arrowRight" />
+            <img className={imgArrow1} src="/arrowRight.png" alt="arrowRight" />
           </a>
           <br />
-          <img src="src\assets\line.png" alt="line" />
+          <img src="/line.png" alt="line" />
           <br />
           <a
             style={{
@@ -78,7 +78,7 @@ const Strategy = () => {
             onMouseLeave={() => handleMouseLeave('Careers', setShuffledWordCareers)}
           >
             {shuffledWordCareers || 'Careers'}
-            <img className={imgArrow2} src="src\assets\arrowRight.png" alt="arrowRight" />
+            <img className={imgArrow2} src="/arrowRight.png" alt="arrowRight" />
           </a>
         </div>
       </div>

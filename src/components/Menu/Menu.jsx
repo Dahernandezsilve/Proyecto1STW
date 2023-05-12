@@ -59,7 +59,7 @@ const Menu = () => {
     <div className={menu}>
       <div className={col1}>
         Menu
-        <img className={imgLine} src="src\assets\menuLine1.png" alt="menuLine1" />
+        <img className={imgLine} src="/menuLine1.png" alt="menuLine1" />
         <a
           className={ref}
           style={{ marginTop: '-33px' }}
@@ -70,7 +70,7 @@ const Menu = () => {
           {shuffledWordWork || 'Work'}
           <span style={{ marginTop: '-33px', marginLeft: '400px' }}>
             Newsletter
-            <img style={{ paddingLeft: '5px' }} src="src\assets\arrowDown.png" alt="arrowDown" />
+            <img style={{ paddingLeft: '5px' }} src="/arrowDown.png" alt="arrowDown" />
           </span>
         </a>
         <a
@@ -108,7 +108,7 @@ const Menu = () => {
       </div>
       <div className={col2}>
         Social
-        <img className={imgLine} src="src\assets\menuLine2.png" alt="menuLine2" />
+        <img className={imgLine} src="/menuLine2.png" alt="menuLine2" />
         <a
           className={ref}
           style={{ marginTop: '-33px' }}
@@ -161,7 +161,7 @@ const Menu = () => {
       </div>
       <div className={col3}>
         External
-        <img className={imgLine} src="src\assets\menuLine3.png" alt="menuLine3" />
+        <img className={imgLine} src="/menuLine3.png" alt="menuLine3" />
         <a
           className={ref}
           style={{ marginTop: '-33px' }}

@@ -62,7 +62,7 @@ const Header = () => {
           </span>
 
         </a>
-        <img className={headerSymbol} src="src/assets/locomotive3.png" alt="caracter3" />
+        <img className={headerSymbol} src="/locomotive3.png" alt="caracter3" />
         <nav className={navHeader}>
           <ul>
             <li className={navHeaderItemList} data-word="Work">

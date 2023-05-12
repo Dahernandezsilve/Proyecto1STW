@@ -22,7 +22,7 @@ function App() {
       </Helmet>
       {!videoFinished && (
         <VideoBackground
-          src="src/videos/PantallaDeCargaP.mp4"
+          src="/videos/PantallaDeCargaP.mp4"
           onEnd={() => handleVideoEnd()}
         />
       )}

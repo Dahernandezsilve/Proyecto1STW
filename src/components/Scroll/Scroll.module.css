@@ -227,7 +227,7 @@ canvas {
 }
 
 .homeVisualSequenceImage {
-    background-image: url('src/assets/printer3d.png');
+    background-image: url('/printer3d.png');
     position: absolute;
     top: 0;
     right: 200;

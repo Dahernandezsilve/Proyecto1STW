@@ -52,7 +52,7 @@ const Extras = () => {
       <span className={title2}>
         (11)
       </span>
-      <img className={bigLine} src="src\assets\bigLine.png" alt="bigLine" />
+      <img className={bigLine} src="/bigLine.png" alt="bigLine" />
       <span>
         Articles
       </span>
@@ -66,7 +66,7 @@ const Extras = () => {
         {shuffledWordShould || 'Should I use Locomotive Scroll on my project?'}
         <img style={{ marginLeft: '12vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
       </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-30px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
+      <img style={{ marginLeft: '47.2vw', marginTop: '-30px' }} src="/mediumLine2.png" alt="mediumLine" />
       <ExtrasDivider
         text="500 days later, My Better Normal"
         SmarginLeft="48.3vw"
@@ -125,9 +125,9 @@ const Extras = () => {
         onMouseLeave={() => handleMouseLeave('Can I say bravo?', setShuffledWordCan)}
       >
         {shuffledWordCan || 'Can I say bravo?'}
-        <img style={{ marginLeft: '32.4vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
+        <img style={{ marginLeft: '32.4vw' }} src="/arrowUpR.png" alt="arrowUpR" />
       </a>
-      <img style={{ marginTop: '-255px', marginLeft: '-13px' }} src="src\assets\bigLine.png" alt="bigLine" />
+      <img style={{ marginTop: '-255px', marginLeft: '-13px' }} src="/bigLine.png" alt="bigLine" />
       <span style={{ position: 'relative', top: '-120px' }}>
         Culture
       </span>
@@ -141,9 +141,9 @@ const Extras = () => {
         onMouseLeave={() => handleMouseLeave('(2022) Locomotive in Playa del Carmen', setShuffledWordCarmen)}
       >
         {shuffledWordCarmen || '(2022) Locomotive in Playa del Carmen'}
-        <img style={{ marginLeft: '16vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
+        <img style={{ marginLeft: '16vw' }} src="/arrowUpR.png" alt="arrowUpR" />
       </a>
-      <img style={{ marginLeft: '47.2vw', marginTop: '-270px' }} src="src\assets\mediumLine2.png" alt="mediumLine" />
+      <img style={{ marginLeft: '47.2vw', marginTop: '-270px' }} src="/mediumLine2.png" alt="mediumLine" />
       <ExtrasDivider
         text="(2019) Locomotive in Mexico"
         SmarginLeft="48.3vw"
@@ -178,9 +178,9 @@ const Extras = () => {
         onMouseLeave={() => handleMouseLeave('(2017) Locomotive in Samaná', setShuffledWordSanama)}
       >
         {shuffledWordSanama || '(2017) Locomotive in Samaná'}
-        <img style={{ marginLeft: '22.8vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
+        <img style={{ marginLeft: '22.8vw' }} src="/arrowUpR.png" alt="arrowUpR" />
       </a>
-      <img style={{ marginTop: '-410px', marginLeft: '-13px' }} src="src\assets\bigLine.png" alt="bigLine" />
+      <img style={{ marginTop: '-410px', marginLeft: '-13px' }} src="/bigLine.png" alt="bigLine" />
       <span style={{ position: 'relative', top: '-195px' }}>
         Store
       </span>
@@ -194,7 +194,7 @@ const Extras = () => {
         onMouseLeave={() => handleMouseLeave('Check out our gear', setShuffledWordCheck)}
       >
         {shuffledWordCheck || 'Check out our gear'}
-        <img style={{ marginLeft: '30.2vw' }} src="src\assets\arrowUpR.png" alt="arrowUpR" />
+        <img style={{ marginLeft: '30.2vw' }} src="/arrowUpR.png" alt="arrowUpR" />
       </a>
     </div>
   )

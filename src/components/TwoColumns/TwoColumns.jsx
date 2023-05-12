@@ -52,7 +52,7 @@ const TwoColumns = () => {
           className={link}
           href="https://store.locomotive.ca/products/oversized-tote-bag"
         >
-          <img src="src\assets\bag.png" alt="bigLine" />
+          <img src="/bag.png" alt="bigLine" />
           <span
             onMouseEnter={() => handleMouseEnter('Oversized Tote Bag', setShuffledWordtext1)}
             onMouseLeave={() => handleMouseLeave('Oversized Tote Bag', setShuffledWordtext1)}
@@ -66,7 +66,7 @@ const TwoColumns = () => {
             className={text2}
           >
             {shuffledWordtext2 || 'Buy now'}
-            <img style={{ marginLeft: '5px' }} src="src\assets\arrowRight.png" alt="bigLine" />
+            <img style={{ marginLeft: '5px' }} src="/arrowRight.png" alt="bigLine" />
           </span>
           <br />
           <br />
@@ -78,7 +78,7 @@ const TwoColumns = () => {
           className={link}
           href="https://store.locomotive.ca/products/signature-sweatshirt"
         >
-          <img src="src\assets\hoodie.png" alt="bigLine" />
+          <img src="/hoodie.png" alt="bigLine" />
           <span
             onMouseEnter={() => handleMouseEnter('Black Hooded Sweatshirt', setShuffledWordtext3)}
             onMouseLeave={() => handleMouseLeave('Black Hooded Sweatshirt', setShuffledWordtext3)}
@@ -92,7 +92,7 @@ const TwoColumns = () => {
             className={text22}
           >
             {shuffledWordtext4 || 'Buy now'}
-            <img style={{ marginLeft: '5px', marginTop: '5px' }} src="src\assets\arrowRight.png" alt="bigLine" />
+            <img style={{ marginLeft: '5px', marginTop: '5px' }} src="/arrowRight.png" alt="bigLine" />
           </span>
           <br />
           <br />

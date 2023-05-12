@@ -35,7 +35,7 @@ const HomeFeaturedLinks = () => (
         title="Pangram Pangram"
         subtitle1="Pangram"
         subtitle2="Pangram"
-        videoSrc="src/videos/Pangram.mp4"
+        videoSrc="/videos/Pangram.mp4"
         link="https://locomotive.ca/en/work/pangram-pangram-foundry"
         linkText="Read more about this project"
       />
@@ -43,7 +43,7 @@ const HomeFeaturedLinks = () => (
         title="Baillat Studio"
         subtitle1="Baillat"
         subtitle2="Studio"
-        videoSrc="src/videos/Studio.mp4"
+        videoSrc="/videos/Studio.mp4"
         link="https://locomotive.ca/en/work/baillat-studio"
         linkText="Read more about this project"
       />
@@ -51,7 +51,7 @@ const HomeFeaturedLinks = () => (
         title="Age of Union"
         subtitle1="Age"
         subtitle2="of Union"
-        videoSrc="src/videos/Union.mp4"
+        videoSrc="/videos/Union.mp4"
         link="https://locomotive.ca/en/work/age-of-union"
         linkText="Read more about this project"
       />
@@ -59,7 +59,7 @@ const HomeFeaturedLinks = () => (
         title="It&apos;s not violent"
         subtitle1="It&apos;s not"
         subtitle2="violent"
-        videoSrc="src/videos/Violent.mp4"
+        videoSrc="/videos/Violent.mp4"
         link="https://locomotive.ca/en/work/it-s-not-violent"
         linkText="Read more about this project"
       />
@@ -67,7 +67,7 @@ const HomeFeaturedLinks = () => (
         title="Haven Studios"
         subtitle1="Haven"
         subtitle2="Studios"
-        videoSrc="src/videos/Haven.mp4"
+        videoSrc="/videos/Haven.mp4"
         link="https://locomotive.ca/en/work/haven-studios"
         linkText="Read more about this project"
       />
@@ -98,7 +98,7 @@ const HomeScrollContainer = () => (
         </div>
       </div>
       <span className={homeSummaryFooter}>
-        <img className={homeSummaryFooterImage} src="src/assets/locomotive4.png" alt="caracter4" />
+        <img className={homeSummaryFooterImage} src="/locomotive4.png" alt="caracter4" />
         Built in MTL
       </span>
     </div>
@@ -108,10 +108,10 @@ const HomeScrollContainer = () => (
 const HomeScrollBackground = () => (
   <div className={homeScrollBackground}>
     <span>
-      <img alt="Locomotive showreel video" width="1920" height="1080" src="uploads/home/posterhome-2000w.jpg" />
+      <img alt="Locomotive showreel video" width="1920" height="1080" src="/locomotive4.png" />
     </span>
     <video autoPlay loop muted className={homeVideoView}>
-      <source src="src/videos/fondo.mp4" type="video/mp4" />
+      <source src="/videos/fondo.mp4" type="video/mp4" />
     </video>
   </div>
 )
@@ -119,11 +119,11 @@ const HomeScrollBackground = () => (
 const HomeScrollContent = () => (
   <div className={homeScrollContent}>
     <h1 className={homeHeading} data-allow-shuffle>
-      <img src="src\assets\locomotive1.png" alt="Caracter1" />
+      <img src="/locomotive1.png" alt="Caracter1" />
       Locomotive®
       <br />
       Digital-first Design Agency
-      <img src="src\assets\locomotive2.png" alt="Caracter2" />
+      <img src="/locomotive2.png" alt="Caracter2" />
     </h1>
   </div>
 )

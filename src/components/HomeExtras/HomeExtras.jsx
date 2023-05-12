@@ -13,7 +13,7 @@ const HomeExtras = () => (
     <Extras />
     <TwoColumns />
     <Menu />
-    <img className={imgFooter} src="src\assets\footer.png" alt="arrowRight" />
+    <img className={imgFooter} src="/footer.png" alt="arrowRight" />
   </div>
 
 )
