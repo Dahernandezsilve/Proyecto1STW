@@ -82,8 +82,8 @@ Si necesitas ayuda con este proyecto, puedes contactarme a través de las siguie
 
 ## Mantenimiento y contribución😉
 
-Este proyecto es mantenido y desarrollado por `Dahernandezsilve`. Si tienes alguna idea de mejora, corrección de errores o deseas contribuir de alguna forma, eres bienvenido a hacerlo. Simplemente realiza un fork del repositorio, crea una rama con tus cambios y envía una pull request. Aprecio mucho cualquier contribución que puedas realizar ✨.
+Este proyecto es mantenido y desarrollado por `Dahernandezsilve`. Si tienes alguna idea de mejora, corrección de errores o deseas contribuir de alguna forma, eres bienvenido a hacerlo. Simplemente realiza un fork del repositorio, crea una rama con tus cambios y envía una pull request. Aprecio mucho cualquier contribución que puedas realizar.
 
 ----------
 
-¡Gracias por tu interés en el proyecto! Si tienes alguna otra pregunta, no dudes en preguntar o contactarme.
+¡Gracias por tu interés en el proyecto! Si tienes alguna otra pregunta, no dudes en preguntar o contactarme ✨
