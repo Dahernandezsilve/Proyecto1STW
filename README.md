@@ -1,10 +1,11 @@
+
 # Réplica de la página de Locomotive📑
 
 Este proyecto replica una página web llamada [https://locomotive.ca/en](https://locomotive.ca/en) con fines educativos.
 
 ## Utilidad del proyecto 🎯
 
-El proyecto es útil porque implementa tecnologías modernas como React, ESLint, CSS Modules, Storybook y Vite. Estas tecnologías permiten desarrollar una aplicación web de manera eficiente, modular y con buenas prácticas de código. En otro apartado, me permitieron profundizar en conocimientos del uso y funcionamiento de las tecnologías mencionadas. 
+El proyecto es útil porque implementa tecnologías modernas como React, ESLint, CSS Modules, Storybook y Vite. Estas tecnologías permiten desarrollar una aplicación web de manera eficiente, modular y con buenas prácticas de código. En otro apartado, me permitieron profundizar en conocimientos del uso y funcionamiento de las tecnologías mencionadas. Además, se incluyen pruebas automatizadas con Vitest y jsdom para garantizar el correcto funcionamiento de la aplicación.
 
 ## Comenzar con el proyecto 
 
@@ -54,6 +55,14 @@ El proyecto también incluye Storybook, una herramienta para desarrollar compone
     yarn storybook
 
 Esto iniciará el servidor de Storybook y podrás ver tus componentes en el navegador en [http://localhost:6006](http://localhost:6006/).
+
+### Pruebas 🏥
+
+Para ejecutar las pruebas del proyecto, utiliza el siguiente comando:
+
+    yarn test
+  
+  Esto ejecutará las pruebas automatizadas y mostrará los resultados en la terminal.
 
 ### Construcción🏗️
 
