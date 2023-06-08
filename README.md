@@ -19,19 +19,20 @@ Antes de comenzar, asegúrate de tener los siguientes requisitos instalados en t
 
 Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-1.  Clona el repositorio:
+Clona el repositorio:
 
-    <git clone git@github.com:Dahernandezsilve/Proyecto1STW.git>
+    git clone git@github.com:Dahernandezsilve/Proyecto1STW.git
 
-2.  Navega hasta el directorio del proyecto:
+Navega hasta el directorio del proyecto:
 
-    <cd Proyecto1STW>
+    cd Proyecto1STW
 
-3.  Instala las dependencias utilizando yarn:
+Instala las dependencias utilizando yarn:
 
-    <yarn install>
+    yarn install
 
  
+
 ### Desarrollo🔬
 
 Para realizar cambios y desarrollar, utiliza el siguiente comando:
