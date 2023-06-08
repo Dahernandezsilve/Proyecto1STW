@@ -21,21 +21,22 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
 1.  Clona el repositorio:
 
-`git clone git@github.com:Dahernandezsilve/Proyecto1STW.git` 
+    git clone git@github.com:Dahernandezsilve/Proyecto1STW.git
 
 2.  Navega hasta el directorio del proyecto:
 
-`cd Proyecto1STW` 
+    cd Proyecto1STW
 
 3.  Instala las dependencias utilizando yarn:
 
-`yarn install` 
+    yarn install
 
+ 
 ### Desarrollo🔬
 
 Para realizar cambios y desarrollar, utiliza el siguiente comando:
 
-`yarn dev` 
+    yarn dev
 
 Esto iniciará el servidor de desarrollo de Vite y podrás ver tu proyecto en el navegador en [http://localhost:3000](http://localhost:3000/).
 
@@ -43,13 +44,13 @@ Esto iniciará el servidor de desarrollo de Vite y podrás ver tu proyecto en el
 
 Este proyecto utiliza ESLint para mantener un código limpio y consistente. Para ejecutar ESLint y verificar el estado del código, utiliza el siguiente comando:
 
-`yarn lint` 
+    yarn lint
 
 ### Storybook 🚀
 
 El proyecto también incluye Storybook, una herramienta para desarrollar componentes de manera aislada y visual. Para ejecutar Storybook, utiliza el siguiente comando:
 
-`yarn storybook` 
+    yarn storybook
 
 Esto iniciará el servidor de Storybook y podrás ver tus componentes en el navegador en [http://localhost:6006](http://localhost:6006/).
 
@@ -57,9 +58,7 @@ Esto iniciará el servidor de Storybook y podrás ver tus componentes en el nave
 
 Para construir el proyecto para producción, utiliza el siguiente comando:
 
-bashCopy code
-
-`yarn build` 
+    yarn build
 
 Esto generará una versión optimizada del proyecto en el directorio `dist`.
 
@@ -73,7 +72,7 @@ Si necesitas ayuda con este proyecto, puedes contactarme a través de las siguie
 
 ## Mantenimiento y contribución😉
 
-Este proyecto es mantenido y desarrollado por Dahernandezsilve. Si tienes alguna idea de mejora, corrección de errores o deseas contribuir de alguna forma, eres bienvenido a hacerlo. Simplemente realiza un fork del repositorio, crea una rama con tus cambios y envía una pull request. Aprecio mucho cualquier contribución que puedas realizar ✨.
+Este proyecto es mantenido y desarrollado por `Dahernandezsilve`. Si tienes alguna idea de mejora, corrección de errores o deseas contribuir de alguna forma, eres bienvenido a hacerlo. Simplemente realiza un fork del repositorio, crea una rama con tus cambios y envía una pull request. Aprecio mucho cualquier contribución que puedas realizar ✨.
 
 ----------
 
